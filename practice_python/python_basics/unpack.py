@@ -1,0 +1,7 @@
+# a,b = (1,2)
+# print(a)
+# print(b)
+a,b,*c,d  = (1,2,3,4,5)
+print(a)
+print(c)
+print(d)

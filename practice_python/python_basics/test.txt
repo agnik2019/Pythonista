@@ -1,0 +1,9 @@
+hello, file reading and writing
+Initially I started with C
+1. C
+2. C++
+3. Java
+4. Python--little bit
+5. Html+CSS+ Javascript
+6. Javascript
+7. Kotlin(for android development)

@@ -1,7 +1,7 @@
 # Unit tests to check your solution
 
 import unittest
-from gaussian import Gaussian
+from GaussianDistribution import Gaussian
 
 class TestGaussianClass(unittest.TestCase):
     def setUp(self):

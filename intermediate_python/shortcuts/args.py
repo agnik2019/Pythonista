@@ -8,6 +8,8 @@ def fun2(arg1= None, arg2 = None, arg3 = None):
 
 args = [1,2,3]
 fun1(*args)
+# 1 2 3
 
 kargs = {'arg2':2,'arg1':1,'arg3':3}
 fun2(**kargs)
+# 1 2 3

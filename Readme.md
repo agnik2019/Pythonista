@@ -33,6 +33,10 @@ Exploration of statistical learning using the scikit-learn library followed by a
 - 994_rotting_orange
 - reverse a linked list
 - reverse a sub list given head and 2 positions
+- shift linked list (algoexpert)
+
+
+# Practice python
 
 ### Inheritance is the last object-oriented programming topic in the lesson. Thus far you've been exposed to:
 
@@ -46,8 +50,8 @@ Knowing these topics is enough to start writing object-oriented software. What y
 
 Use the following list of resources to learn more about advanced Python object-oriented programming topics.
 
-[Python's Instance, Class, and Static Methods Demystified](https://realpython.com/instance-class-and-static-methods-demystified/): This article explains different types of methods that can be accessed at the class or object level.
-[Class and Instance Attributes](https://www.python-course.eu/python3_class_and_instance_attributes.php): You can also define attributes at the class level or at the instance level.
-[Mixins for Fun and Profit](https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556): A class can inherit from multiple parent classes.
-[Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/): Decorators are a short-hand way to use functions inside other functions.
+- [Python's Instance, Class, and Static Methods Demystified](https://realpython.com/instance-class-and-static-methods-demystified/): This article explains different types of methods that can be accessed at the class or object level.
+- [Class and Instance Attributes](https://www.python-course.eu/python3_class_and_instance_attributes.php): You can also define attributes at the class level or at the instance level.
+- [Mixins for Fun and Profit](https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556): A class can inherit from multiple parent classes.
+- [Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/): Decorators are a short-hand way to use functions inside other functions.
 

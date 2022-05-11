@@ -1,0 +1,241 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> start
+Rule 1     start -> total_cases
+Rule 2     start -> recovered_cases
+Rule 3     start -> deaths
+Rule 4     start -> active_cases
+Rule 5     total_cases -> LTOTALCASE pnum CLOSESPAN
+Rule 6     recovered_cases -> LRECOVERCASE OPENSPAN pnum CLOSESPAN CLOSEDIV
+Rule 7     deaths -> LDEATH OPENSPAN pnum CLOSESPAN CLOSEDIV
+Rule 8     active_cases -> LACTIVECASE pnum EACTIVECASE
+Rule 9     pnum -> NUM
+Rule 10    pnum -> NUM pnum
+
+Terminals, with rules where they appear
+
+CLOSEDIV             : 6 7
+CLOSESPAN            : 5 6 7
+EACTIVECASE          : 8
+LACTIVECASE          : 8
+LDEATH               : 7
+LRECOVERCASE         : 6
+LTOTALCASE           : 5
+NUM                  : 9 10
+OPENSPAN             : 6 7
+error                : 
+
+Nonterminals, with rules where they appear
+
+active_cases         : 4
+deaths               : 3
+pnum                 : 5 6 7 8 10
+recovered_cases      : 2
+start                : 0
+total_cases          : 1
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . start
+    (1) start -> . total_cases
+    (2) start -> . recovered_cases
+    (3) start -> . deaths
+    (4) start -> . active_cases
+    (5) total_cases -> . LTOTALCASE pnum CLOSESPAN
+    (6) recovered_cases -> . LRECOVERCASE OPENSPAN pnum CLOSESPAN CLOSEDIV
+    (7) deaths -> . LDEATH OPENSPAN pnum CLOSESPAN CLOSEDIV
+    (8) active_cases -> . LACTIVECASE pnum EACTIVECASE
+
+    LTOTALCASE      shift and go to state 6
+    LRECOVERCASE    shift and go to state 7
+    LDEATH          shift and go to state 8
+    LACTIVECASE     shift and go to state 9
+
+    start                          shift and go to state 1
+    total_cases                    shift and go to state 2
+    recovered_cases                shift and go to state 3
+    deaths                         shift and go to state 4
+    active_cases                   shift and go to state 5
+
+state 1
+
+    (0) S' -> start .
+
+
+
+state 2
+
+    (1) start -> total_cases .
+
+    $end            reduce using rule 1 (start -> total_cases .)
+
+
+state 3
+
+    (2) start -> recovered_cases .
+
+    $end            reduce using rule 2 (start -> recovered_cases .)
+
+
+state 4
+
+    (3) start -> deaths .
+
+    $end            reduce using rule 3 (start -> deaths .)
+
+
+state 5
+
+    (4) start -> active_cases .
+
+    $end            reduce using rule 4 (start -> active_cases .)
+
+
+state 6
+
+    (5) total_cases -> LTOTALCASE . pnum CLOSESPAN
+    (9) pnum -> . NUM
+    (10) pnum -> . NUM pnum
+
+    NUM             shift and go to state 11
+
+    pnum                           shift and go to state 10
+
+state 7
+
+    (6) recovered_cases -> LRECOVERCASE . OPENSPAN pnum CLOSESPAN CLOSEDIV
+
+    OPENSPAN        shift and go to state 12
+
+
+state 8
+
+    (7) deaths -> LDEATH . OPENSPAN pnum CLOSESPAN CLOSEDIV
+
+    OPENSPAN        shift and go to state 13
+
+
+state 9
+
+    (8) active_cases -> LACTIVECASE . pnum EACTIVECASE
+    (9) pnum -> . NUM
+    (10) pnum -> . NUM pnum
+
+    NUM             shift and go to state 11
+
+    pnum                           shift and go to state 14
+
+state 10
+
+    (5) total_cases -> LTOTALCASE pnum . CLOSESPAN
+
+    CLOSESPAN       shift and go to state 15
+
+
+state 11
+
+    (9) pnum -> NUM .
+    (10) pnum -> NUM . pnum
+    (9) pnum -> . NUM
+    (10) pnum -> . NUM pnum
+
+    CLOSESPAN       reduce using rule 9 (pnum -> NUM .)
+    EACTIVECASE     reduce using rule 9 (pnum -> NUM .)
+    NUM             shift and go to state 11
+
+    pnum                           shift and go to state 16
+
+state 12
+
+    (6) recovered_cases -> LRECOVERCASE OPENSPAN . pnum CLOSESPAN CLOSEDIV
+    (9) pnum -> . NUM
+    (10) pnum -> . NUM pnum
+
+    NUM             shift and go to state 11
+
+    pnum                           shift and go to state 17
+
+state 13
+
+    (7) deaths -> LDEATH OPENSPAN . pnum CLOSESPAN CLOSEDIV
+    (9) pnum -> . NUM
+    (10) pnum -> . NUM pnum
+
+    NUM             shift and go to state 11
+
+    pnum                           shift and go to state 18
+
+state 14
+
+    (8) active_cases -> LACTIVECASE pnum . EACTIVECASE
+
+    EACTIVECASE     shift and go to state 19
+
+
+state 15
+
+    (5) total_cases -> LTOTALCASE pnum CLOSESPAN .
+
+    $end            reduce using rule 5 (total_cases -> LTOTALCASE pnum CLOSESPAN .)
+
+
+state 16
+
+    (10) pnum -> NUM pnum .
+
+    CLOSESPAN       reduce using rule 10 (pnum -> NUM pnum .)
+    EACTIVECASE     reduce using rule 10 (pnum -> NUM pnum .)
+
+
+state 17
+
+    (6) recovered_cases -> LRECOVERCASE OPENSPAN pnum . CLOSESPAN CLOSEDIV
+
+    CLOSESPAN       shift and go to state 20
+
+
+state 18
+
+    (7) deaths -> LDEATH OPENSPAN pnum . CLOSESPAN CLOSEDIV
+
+    CLOSESPAN       shift and go to state 21
+
+
+state 19
+
+    (8) active_cases -> LACTIVECASE pnum EACTIVECASE .
+
+    $end            reduce using rule 8 (active_cases -> LACTIVECASE pnum EACTIVECASE .)
+
+
+state 20
+
+    (6) recovered_cases -> LRECOVERCASE OPENSPAN pnum CLOSESPAN . CLOSEDIV
+
+    CLOSEDIV        shift and go to state 22
+
+
+state 21
+
+    (7) deaths -> LDEATH OPENSPAN pnum CLOSESPAN . CLOSEDIV
+
+    CLOSEDIV        shift and go to state 23
+
+
+state 22
+
+    (6) recovered_cases -> LRECOVERCASE OPENSPAN pnum CLOSESPAN CLOSEDIV .
+
+    $end            reduce using rule 6 (recovered_cases -> LRECOVERCASE OPENSPAN pnum CLOSESPAN CLOSEDIV .)
+
+
+state 23
+
+    (7) deaths -> LDEATH OPENSPAN pnum CLOSESPAN CLOSEDIV .
+
+    $end            reduce using rule 7 (deaths -> LDEATH OPENSPAN pnum CLOSESPAN CLOSEDIV .)
+

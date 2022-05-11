@@ -1,0 +1,8 @@
+
+<india><Total_cases><42822473>
+
+<india><Total_deaths><511935>
+
+<india><Total_recovered><42086383>
+
+<bangladesh><Total_cases><1931304>

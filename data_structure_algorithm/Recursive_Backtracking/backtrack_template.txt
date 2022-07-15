@@ -1,0 +1,10 @@
+def backtrack(node,state):
+    if state is a solution:
+        res.append(state)
+        return
+    
+    for i in range:
+        if i is one solution:
+            state.append(i)
+            backtrack(i+1,state)
+            state.remove(i)

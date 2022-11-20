@@ -1,0 +1,5 @@
+mongodb+srv://agnik:<password>@tutorial.abnybmt.mongodb.net/?retryWrites=true&w=majority
+
+
+pip install pymongo[srv]
+

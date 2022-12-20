@@ -2,7 +2,7 @@ def selectionSort(arr):
     sortedlist = []
     for i in range(len(arr)):
         min_index = find_min_index(arr)
-        print(f"{arr} and {sortedlist}")
+        #print(f"{arr} and {sortedlist}")
         sortedlist.append(arr.pop(min_index))
     return sortedlist
 

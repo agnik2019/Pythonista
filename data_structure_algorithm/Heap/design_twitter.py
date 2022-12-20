@@ -1,3 +1,4 @@
+from collections import defaultdict
 class Twitter(object):
 
     def __init__(self):
